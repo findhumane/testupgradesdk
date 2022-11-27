@@ -37,11 +37,6 @@ export default {
       foregroundImage: "./assets/icon.png",
       backgroundColor: BGCOLOR
     },
-    config: {
-      googleMaps: {
-        apiKey: process.env.GMAPS_APIKEY
-      }
-    },
     permissions: [
       "ACCESS_COARSE_LOCATION",
     ],
@@ -53,19 +48,8 @@ export default {
   },
   web: {
     favicon: "./assets/favicon.png",
-    build: {
-      babel: {
-        include: [
-          "@ui-kitten/components"
-        ]
-      }
-    }
   },
   developmentClient: {
     silentLaunch: true,
-  },
-  extra: {
-    test: "Test data",
-    googleWebApiKey: process.env.GMAPS_WEB_APIKEY,
   },
 }
